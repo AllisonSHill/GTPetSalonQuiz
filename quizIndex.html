@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="quizStyles.css">
+    <title></title>
+</head>
+<body>
+    <div class="title">
+        <a href="http://goldentouchpetsalon.com" target="_blank"><img src="GTlogo.png"></a>
+            <h1>Welcome to the Quiz!</h1>
+            <h4>Are you ready to test your knowledge of dog breeds?</h4>
+            <p>Use the buttons below to navigate the quiz.</p>
+</div>
+    <div class="quiz-container">
+        <div id="results"></div>    
+        <div id="final" class="end-container">
+            <div id="finalContent">
+            </div>
+            <div id="finalButtons">
+                <button id="restart" class="controlButton" onclick="window.location.reload();"> Try Again</button>
+                <button id="home" class="controlButton" onclick="window.location.href='http://goldentouchpetsalon.com'">Visit GoldenTouchPetSalon.com</button>
+            </div>
+        </div>
+        <div id="quiz">
+        </div>
+        <div id="button-container">
+            <button id="previous" class="controlButton" onclick="showPreviousSlide()">Previous Question</button>
+            <button id="next" class="controlButton" onclick="showNextSlide()">Next Question</button>
+            <button id="end" class="controlButton" onclick="endQuiz()">End Quiz</button>
+        </div>
+    </div>        
+
+
+
+    <script src="quizScripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
